@@ -104,19 +104,9 @@ public abstract class Personagens {
 
     public abstract void curar();
     
-    public void aleatorioAlto(){
-        Random aleatorio1 = new Random();
-        aleatorioAlto = (aleatorio1.nextInt(15)+10);
-    }
-    
-    public void aleatorioMedio(){
-        Random aleatorio2 = new Random();
-        aleatorioMedio = (aleatorio2.nextInt(15)+5);
-    }
-    
-    public void aleatorioBaixo(){
-        Random aleatorio3 = new Random();
-        aleatorioBaixo = (aleatorio3.nextInt(10)+5);
+    public int teste(int a){
+        Random aleatorio = new Random();
+        return aleatorio.nextInt(15)+a;
     }
     
     public void ataqueBonus(Personagens x) {

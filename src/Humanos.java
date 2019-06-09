@@ -25,15 +25,15 @@ public abstract class Humanos extends Personagens {
     
     @Override
     public void atacar(Personagens x) {
-        aleatorioMedio();
-        setAtaque(getAleatorioMedio());
+        int valor = teste(ValorDano.DANO_MEDIO.getDano());
+        setAtaque(valor);
         x.setVida(x.getVida() - getAtaque());
     }
 
     @Override
     public void curar() {
-        aleatorioMedio();
-        setCura(getAleatorioMedio());
+        int valor = teste(ValorDano.DANO_MEDIO.getDano());
+        setCura(valor);
         setVida(getVida() + getCura());
     }
     

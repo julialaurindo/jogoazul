@@ -16,15 +16,15 @@ public abstract class Fadas extends Personagens {
     
     @Override
     public void atacar(Personagens x) {
-        aleatorioAlto();
-        setAtaque(getAleatorioAlto());
+        int valor = teste(ValorDano.DANO_ALTO.getDano());
+        setAtaque(valor);
         x.setVida(x.getVida() - getAtaque());
     }
 
     @Override
     public void curar() {
-        aleatorioBaixo();
-        setCura(getAleatorioBaixo());
+        int valor = teste(ValorDano.DANO_BAIXO.getDano());
+        setCura(valor);
         setVida(getVida() + getCura());
     }
     
