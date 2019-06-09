@@ -534,6 +534,7 @@ public class TelaJogo extends javax.swing.JFrame {
         click();
         fogo();
         desativarFadas();
+        
     }//GEN-LAST:event_btnFogoActionPerformed
 
     private void btnAguaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAguaActionPerformed
